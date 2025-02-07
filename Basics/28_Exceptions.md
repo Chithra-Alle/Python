@@ -73,3 +73,46 @@ Enter an integer: 3.142
 Number entered is not an integer.
 This block is always executed.
 ```
+
+# Defining Custom Exceptions
+In Python, you can create and raise your own errors using the raise keyword. This is useful when you want to stop the program if something specific goes wrong.
+### 🔹 Basic Example
+```
+age = int(input("Enter your age: "))
+if age < 18:
+    raise ValueError("You must be 18 or older!")
+```
+💡 Explanation:
+If the user enters an age less than 18, Python stops and shows the error message.
+raise ValueError("message") forces an error when a condition is met.
+
+### 🔹 Creating a Custom Error Class
+You can create your own error type by making a new class that inherits from Exception.
+```
+class TooYoungError(Exception):
+    pass  # Just a custom error with no extra behavior
+
+age = 15
+if age < 18:
+    raise TooYoungError("You are too young to proceed!")
+```
+💡 Why?
+This lets you define specific error types to make debugging easier.
+
+### 🔹 Custom Error with More Details
+You can add extra behavior to your custom error by defining an __init__ method.
+```
+class AgeError(Exception):
+    def __init__(self, age, message="Age must be 18 or older!"):
+        self.age = age
+        self.message = message
+        super().__init__(f"{message} (You entered: {age})")
+
+age = 16
+if age < 18:
+    raise AgeError(age)
+```
+
+
+
+
