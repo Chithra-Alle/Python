@@ -41,3 +41,21 @@ match x:
 ```
 x % 2 == 0 and case is 4
 ```
+
+### Example
+```python
+x = int(input("Enter a number: "))  # Ensure x has a value before match
+
+match x:
+    case _ if x % 2 == 0:
+        print('x is even')
+    case _ if x % 2 != 0:
+        print('x is not even')
+    case _:
+        print('default yar!')
+```
+### output
+```
+Enter a number: 8
+* is even
+```
