@@ -5,7 +5,7 @@ Sometimes the programmer needs to check the evaluation of certain expression(s),
 Based on this, the conditional statements are further classified into following types:
 - if
 - if-else
-- if-else-elif
+- if-else-elif 
 - nested if-else-elif.
 ## An if……else statement evaluates like this:
 
