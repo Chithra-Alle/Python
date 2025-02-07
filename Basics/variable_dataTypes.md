@@ -80,7 +80,9 @@ Output:
 ## 5. Mapped data: dict
     
 
-**dict:** A dictionary is an unordered collection of data containing a key:value pair. The key:value pairs are enclosed within curly brackets.
+**dict:** A dictionary is an ordered collection of data containing a key:value pair. The key:value pairs are enclosed within curly brackets.
+In Python, dictionaries are ordered as of version 3.7 and later. This means that when you iterate over a dictionary, the elements are returned in the order they were inserted.
+Before Python 3.7, dictionaries were unordered, meaning there was no guarantee that the elements would maintain the insertion order.
 
 **Example:**
 
