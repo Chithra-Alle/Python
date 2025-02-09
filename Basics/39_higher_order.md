@@ -25,4 +25,30 @@ def multiply_by(n):
 double = multiply_by(2)  # Creates a function that multiplies by 2
 print(double(5))  # Output: 10
 ```
+Example 3: Built-in Higher-Order Functions (map, filter, reduce)
+Python has built-in higher-order functions that take other functions as arguments.
 
+### map() - Applies a function to each item in a list
+```python
+numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x ** 2, numbers))  # Squares each number
+print(squared)  # Output: [1, 4, 9, 16]
+```
+### filter() - Filters elements based on a condition
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))  # Keeps only even numbers
+print(even_numbers)  # Output: [2, 4, 6]
+```
+### reduce() - Combines all elements into a single value
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+sum_numbers = reduce(lambda x, y: x + y, numbers)  # Adds all numbers
+print(sum_numbers)  # Output: 10
+```
+Why Use Higher-Order Functions?
+- ✅ Makes code more reusable
+- ✅ Reduces repetition
+- ✅ Improves readability
