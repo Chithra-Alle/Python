@@ -51,5 +51,29 @@ AttributeError: 'Car' object has no attribute '__brand'
 # 4. Accessing Private Members via Methods:
 - To provide controlled access to private attributes or methods, use getter and setter methods.
 - This approach ensures data encapsulation, allowing validation or transformation before setting or getting values.
+```python
+class Car:
+    def __init__(self, brand, speed):
+        self.__brand = brand
+        self.__speed = speed
+
+    def get_brand(self):  # Getter method
+        return self.__brand
+
+    def set_brand(self, brand):  # Setter method
+        self.__brand = brand
+
+    def get_speed(self):
+        return self.__speed
+
+    def set_speed(self, speed):
+        self.__speed = speed
+
+car1 = Car("Tesla", 120)
+print(car1.get_brand())  # Access private attribute via getter
+car1.set_brand("BMW")  # Modify private attribute via setter
+print(car1.get_brand())
+```
+💡 Rule: Use getter and setter methods to interact with private members instead of accessing them directly.
 
 
