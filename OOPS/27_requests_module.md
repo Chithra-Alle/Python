@@ -17,37 +17,37 @@
 > 📜 Response: List of food items in JSON.
 
 2️⃣ POST Request – Placing an Order
-> You: "I’d like to order a large pizza and a Coke."
+> You: "I’d like to order a large pizza and a Coke."<br>
 > Restaurant: "Okay, your order is confirmed!"<br>
 > 👉 requests.post("https://foodapp.com/order", data={"item": "Pizza", "drink": "Coke"})<br>
 > 📜 Response: "Your order ID is 123. It will arrive in 30 minutes."
 
 3️⃣ PUT Request – Changing Your Order
-> You: "Oops! I want Pepsi instead of Coke."
+> You: "Oops! I want Pepsi instead of Coke."<br>
 > Restaurant: "Got it! Order updated."<br>
 > 👉 requests.put("https://foodapp.com/order/123", data={"drink": "Pepsi"})<br>
 > 📜 Response: "Your drink has been updated to Pepsi."
 
 4️⃣ DELETE Request – Cancelling Your Order
-> You: "Oh no, I changed my mind! Cancel my order."
+> You: "Oh no, I changed my mind! Cancel my order."<br>
 > Restaurant: "Okay, your order has been canceled."<br>
 > 👉 requests.delete("https://foodapp.com/order/123")<br>
 > 📜 Response: "Your order has been deleted."
 
 5️⃣ 404 Not Found – Restaurant is Closed
-> You: "Can I order food?"
+> You: "Can I order food?"<br>
 > Restaurant: "Sorry, we are closed!"<br>
 > 👉 requests.get("https://foodapp.com/midnight-menu")<br>
 > 📜 Response: 404 Not Found
 
 6️⃣ 401 Unauthorized – Wrong Password
-> You: "Let me log in and get a discount."
+> You: "Let me log in and get a discount."<br>
 > Server: "Wrong password, access denied!"<br>
 > 👉 requests.get("https://foodapp.com/discount", headers={"Authorization": "WrongToken"})<br>
 > 📜 Response: 401 Unauthorized
 
 7️⃣ 500 Internal Server Error – Kitchen is on Fire! 🔥
-> You: "Hey, where’s my order?"
+> You: "Hey, where’s my order?"<br>
 > Restaurant: "Our kitchen just caught fire! We can’t serve your order!"<br>
 > 👉 requests.get("https://foodapp.com/order-status/123")<br>
 > 📜 Response: 500 Internal Server Error
