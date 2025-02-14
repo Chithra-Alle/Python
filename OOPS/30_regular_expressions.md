@@ -20,8 +20,8 @@
 > \W → Matches any non-word character(\n, . ,   , " ")<br>
 > \s → Matches any whitespace (spaces, tabs, newlines)<br>
 > \S → Matches any non-whitespace<br>
-> * → Matches 0 or more repetitions of the previous character<br>
-> + → Matches 1 or more repetitions<br>
+> "*" → Matches 0 or more repetitions of the previous character<br>
+> "+" → Matches 1 or more repetitions<br>
 > ? → Matches 0 or 1 repetitions<br>
 > {n,m} → Matches between n and m occurrences<br>
 
