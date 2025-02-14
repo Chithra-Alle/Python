@@ -11,45 +11,45 @@
 
 1️⃣ GET Request – Checking Menu
 
-> You: "Hey, can I see the menu?"
-> Restaurant (Server): "Sure! Here’s the list of available items."
+> You: "Hey, can I see the menu?"<br>
+> Restaurant (Server): "Sure! Here’s the list of available items."<br>
 > 👉 requests.get("https://foodapp.com/menu"). <br>
 > 📜 Response: List of food items in JSON.
 
 2️⃣ POST Request – Placing an Order
 > You: "I’d like to order a large pizza and a Coke."
-> Restaurant: "Okay, your order is confirmed!"
-> 👉 requests.post("https://foodapp.com/order", data={"item": "Pizza", "drink": "Coke"})
+> Restaurant: "Okay, your order is confirmed!"<br>
+> 👉 requests.post("https://foodapp.com/order", data={"item": "Pizza", "drink": "Coke"})<br>
 > 📜 Response: "Your order ID is 123. It will arrive in 30 minutes."
 
 3️⃣ PUT Request – Changing Your Order
 > You: "Oops! I want Pepsi instead of Coke."
-> Restaurant: "Got it! Order updated."
-> 👉 requests.put("https://foodapp.com/order/123", data={"drink": "Pepsi"})
+> Restaurant: "Got it! Order updated."<br>
+> 👉 requests.put("https://foodapp.com/order/123", data={"drink": "Pepsi"})<br>
 > 📜 Response: "Your drink has been updated to Pepsi."
 
 4️⃣ DELETE Request – Cancelling Your Order
 > You: "Oh no, I changed my mind! Cancel my order."
-> Restaurant: "Okay, your order has been canceled."
-> 👉 requests.delete("https://foodapp.com/order/123")
+> Restaurant: "Okay, your order has been canceled."<br>
+> 👉 requests.delete("https://foodapp.com/order/123")<br>
 > 📜 Response: "Your order has been deleted."
 
 5️⃣ 404 Not Found – Restaurant is Closed
 > You: "Can I order food?"
-> Restaurant: "Sorry, we are closed!"
-> 👉 requests.get("https://foodapp.com/midnight-menu")
+> Restaurant: "Sorry, we are closed!"<br>
+> 👉 requests.get("https://foodapp.com/midnight-menu")<br>
 > 📜 Response: 404 Not Found
 
 6️⃣ 401 Unauthorized – Wrong Password
 > You: "Let me log in and get a discount."
-> Server: "Wrong password, access denied!"
-> 👉 requests.get("https://foodapp.com/discount", headers={"Authorization": "WrongToken"})
+> Server: "Wrong password, access denied!"<br>
+> 👉 requests.get("https://foodapp.com/discount", headers={"Authorization": "WrongToken"})<br>
 > 📜 Response: 401 Unauthorized
 
 7️⃣ 500 Internal Server Error – Kitchen is on Fire! 🔥
 > You: "Hey, where’s my order?"
-> Restaurant: "Our kitchen just caught fire! We can’t serve your order!"
-> 👉 requests.get("https://foodapp.com/order-status/123")
+> Restaurant: "Our kitchen just caught fire! We can’t serve your order!"<br>
+> 👉 requests.get("https://foodapp.com/order-status/123")<br>
 > 📜 Response: 500 Internal Server Error
 
 - Yeah, this is a fun way to know api keys. However you might be confused why in some places put used and in other places post used and at some other place delete used. To know more about it, keep on reading below..... hold your enthusiasm.....
