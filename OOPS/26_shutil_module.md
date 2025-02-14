@@ -11,7 +11,7 @@
   ### Key features of shutile module
 |Function|	Description	|Example|
 |:-------:|:-----------:|:------:|
-|shutil.copy(src, dest)|	Copies a file from src to dest.|
+|shutil.copy(src, dest)|	Copies a file from src to dest.
 |shutil.copy("file.txt", "backup.txt")|
 |shutil.copy2(src, dest)|	Similar to copy(), but also preserves metadata (timestamps, permissions).	|shutil.copy2("file.txt", "backup.txt")|
 |shutil.copytree(src, dest)|	Copies an entire directory tree from src to dest.	|shutil.copytree("my_folder", "backup_folder")|
