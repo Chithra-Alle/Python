@@ -14,5 +14,5 @@
 
 > You: "Hey, can I see the menu?"
 > Restaurant (Server): "Sure! Here’s the list of available items."
-> 👉 requests.get("https://foodapp.com/menu")
+> 👉 requests.get("https://foodapp.com/menu").
 > 📜 Response: List of food items in JSON.
