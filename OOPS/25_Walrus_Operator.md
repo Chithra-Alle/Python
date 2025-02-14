@@ -49,7 +49,7 @@ for num in numbers:
 print(filtered)
 ```
 
--with walrus operator
+- with walrus operator
 ```
 numbers = [10, 20, 30, 40, 50]
 filtered = [squared for num in numbers if (squared := num ** 2) > 800]
