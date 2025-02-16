@@ -30,9 +30,9 @@ if __name__=="__main__":
     print(balance.value)
     print("Bye")
 ```
-> Try Running this multiple times, you can observe inconsistent result.
-> What happening here is, the two processes trying to access the shared resource at a time, while before a process complete it's task, the other process interepts.
-> So, to solve this issue we need locks, please look at the below code for better understanding
+* Try Running this multiple times, you can observe inconsistent result.
+* What happening here is, the two processes trying to access the shared resource at a time, while before a process complete it's task, the other process interepts.
+* So, to solve this issue we need locks, please look at the below code for better understanding
 
 ```
 from multiprocessing import *
