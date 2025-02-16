@@ -39,3 +39,32 @@ if __name__=="__main__":
     p.join()
     print("Bye")
 ```
+
+# Sharing Data between Processes using Queue
+```
+from multiprocessing import *
+from time import *
+
+def hel(nums,q):
+    for n in nums:
+        print(n)
+        q.put(n)
+        sleep(1)
+if __name__=="__main__":
+    nums=[1,2,3,4]
+    q=Queue()
+    p = Process(target=hel,args=(nums,q))
+    p.start()
+    p.join()
+
+    while q.empty() is False:
+        print(q.get())
+    print("Bye")           
+```
+# Difference between Queue module and Multiprocessing Queue
+| Multiprocessing Queue | Queue Module|
+|:--------:|:-------:|
+|import multiprocessing|import queue|
+|q=multiprocessing.Queue()|q=queue.Queue()|
+|Lives in shared memory|Lives in in-process memory|
+|Used in share data between processe|Used in share data between threads|
