@@ -54,4 +54,15 @@
 | - it follows stateless client-server model | can be statefull or stateless | suitable for buidling enterprise-level apps|
 | - it is suitable for simple application that require crud operations, adn real-time communicaiton | suitable for buiding complex applications that require integration with differnt system and technologies ||
 
-  
+
+
+# WebSocket API
+purpose : enables real-time , two way communication between the client and server.<br>
+when to use: When you need instant updates (e.g., live chat or notifications).<br>
+Real-time Example: If you add a real-time comment section to RGU-Blogs, WebSockets will ensure new comments appear instantly.<br>
+
+
+# gRPC API
+Purpose: Uses Protocol Buffers (protobuf) for fast communication between services.<br>
+When to Use: When you need high performance and low latency (e.g., microservices).<br>
+Real-time Example: If RGU-Blogs scales to handle millions of users and needs microservices, gRPC can optimize data transfer.
