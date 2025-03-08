@@ -1,3 +1,16 @@
+# Comparison Table
+| API type | Format | protocol | Best use case | Example |
+| REST API | JSON,XML | HTTP | Web & mobile apps | RGU-Blogs fetching posts|
+| GraphQL | JSON | HTTP | Data heavy apps | Fetching only needed fields in RGU-Blogs|
+| SOAP API | XML | HTTP,SMTP | Banking, finance | Payments in RGU-Blogs |
+| WebSocket API | JSON, Binary | WebSocket | Real-time apps | Live comments in RGU-Blogs|
+|gRPC API | Protobuf | HTTP/2 | Mircoservices | Scaling RGU-Blogs for high traffic|
+
+
+
+
+
+
 # Rest API- Representational state Transfer
 - it's a web based application programming interface
 - that follows the rest architectural style
