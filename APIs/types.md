@@ -1,5 +1,6 @@
 # Comparison Table
 | API type | Format | protocol | Best use case | Example |
+|----------|--------|----------|---------------|---------|
 | REST API | JSON,XML | HTTP | Web & mobile apps | RGU-Blogs fetching posts|
 | GraphQL | JSON | HTTP | Data heavy apps | Fetching only needed fields in RGU-Blogs|
 | SOAP API | XML | HTTP,SMTP | Banking, finance | Payments in RGU-Blogs |
