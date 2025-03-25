@@ -1,4 +1,4 @@
-# Comparison Table
+# Comparison Tablee
 | API type | Format | protocol | Best use case | Example |
 |----------|--------|----------|---------------|---------|
 | REST API | JSON,XML | HTTP | Web & mobile apps | RGU-Blogs fetching posts|
